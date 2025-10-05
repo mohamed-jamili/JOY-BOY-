@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Football World</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        
+        
+        background-image: url(images/third\ \(1\).avif);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      * {
+        margin: 0;
+      }
+      .col-md-3 {
+        position: sticky;
+        height: 100%;
+        top: 80px;
+        height: fit-content;
+        background-image: url(images/first.back\ \(1\).jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 2%;
+      }
+
+      .post {
+        background-color: white;
+        border-radius: 5px;
+        padding: 15px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .post img {
+        max-width: 100%;
+        border-radius: 5px;
+      }
+      
+ 
+  button {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  }
+
+ 
+  .btn {
+    margin-bottom: 10px;
+  }
+
+  
+  .text-warning {
+    color: #ffc107 !important; 
+  }
+
+  
+
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .post {
+    animation: fadeIn 0.8s ease-in-out;
+  }
+
+  
+  .accordion-item {
+    margin-bottom: 10px;
+  }
+
+  
+  footer {
+    color: white;
+    font-size: 14px;
+    background-color: #212529;
+  }
+
+ 
+  .rounded-circle {
+    border: 2px solid #ffc107;
+  }
+
+  .hovlink{
+    color:gold;
+  
+  }
+  
+  .hovlink:hover{
+    background-color: brown;
+    color: rgb(0, 0, 0);
+    border-bottom: brown 1px solid;
+    border-top:brown 1px solid ;
+    box-shadow: 
+    0 0 30px rgb(143, 6, 18),0 0 100px brown;
+  }
+  
+  .btn-brown:hover{
+    box-shadow: 0 0 5px brown,
+    0 0 25px brown,0 0 50px brown,
+    0 0 100px brown,0 0 200px brown;
+  
+  }
+  
+  btn-gold:hover{
+    box-shadow: 0 0 5px gold,
+    0 0 25px gold,0 0 50px gold,
+    0 0 100px gold,0 0 200px gold;
+  
+  }
+  
+  .btn-white:hover{
+    box-shadow: 0 0 5px white,
+    0 0 25px white,0 0 50px white,
+    0 0 100px white,0 0 200px white;
+  
+  }
+
+  .nav-color{
+  
+  box-shadow: 
+  
+  0 0 100px rgb(42, 48, 165);
+}
+
+.logo{
+ 
+ mix-blend-mode:exclusion;
+
+}
+
+.top{
+  margin-top: 300px;
+}
+
+  
+
+      
+    </style>
+  </head>
+  <body>
+
+
+    <nav class="navbar navbar-expand-lg fixed-top bg-black col-md-12 btn-gold nav-color ">
+      <div class="container-fluid col-md-12">
+        <a class="navbar-brand text-light ms-2 col-md-2 hov  " href="mostafa.html" id="mostafa" >
+          <img src="images/joyboy1.jpeg" class=" logo rounded-4 " style="width: 40px;">
+          JOYBOY
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end me-3 justify-content-center " id="navbarNavAltMarkup">
+          <div class="navbar-nav col-md-4">
+            <a class="nav-link hovlink " href="adam.html">Music</a>
+            <a class="nav-link hovlink " aria-current="page" href="movies.html">watch</a>
+            <a class="nav-link hovlink " href="#koora">football</a>
+            <a class="nav-link hovlink " aria-disabled="true" href="jamili.html">Gaming</a>
+          </div>
+          <div class="container-fluid ms-5 col-md-4 ">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2 text-light bg-black" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-danger btn-brown" type="submit">search</button>
+            </form>
+          </div>
+  
+          <button class="btn btn-outline-light me-5 col-md-2 btn-white" type="submit">Sing Up Now</button>
+        </div>
+      </div>
+  
+    </nav>
+  
+
+
+
+    <nav><br /><br /><br /></nav>
+    <div class="row m-2">
+      <div class="col-md-3 bg-success mb-3">
+        <h6 class="text-warning pt-3">Most Popular:</h6>
+        <div>
+          <ul>
+            <li>
+              <a href="https://www.uefa.com/uefachampionsleague/">
+                <button class="btn btn-danger w-100 d-flex align-items-center">
+                  <img
+                    src="images/chompios.logo (1).jpg"
+                    style="width: 30px; height: auto; padding-right: 10px"
+                    alt=""
+                  />
+                  Chpmpions Leugue
+                </button>
+              </a>
+            </li>
+            <br />
+            <li>
+              <a href="https://www.premierleague.com/matchweek/18408/blog">
+                <button class="btn btn-danger w-100 d-flex align-items-center">
+                  <img
+                    src="images/prrmierluegue.logo (1).jpg"
+                    style="width: 30px; height: auto; padding-right: 10px"
+                    alt=""
+                  />
+                  Premiere Leugue
+                </button></a
+              >
+            </li>
+            <br />
+            <li>
+              <a href="https://www.bundesliga.com/en/bundesliga">
+                <button class="btn btn-danger w-100 d-flex align-items-center">
+                  <img
+                    src="images/bundesliga.logo (1).jpg"
+                    style="width: 30px; height: auto; padding-right: 10px"
+                    alt=""
+                  />
+                  bundesliga
+                </button></a
+              >
+            </li>
+            <br />
+            <li>
+              <a href="https://www.laliga.com/en-GB/laliga-genuine/logos">
+                <button class="btn btn-danger w-100 d-flex align-items-center">
+                  <img
+                    src="images/LaLiga-Logo (1).jpg"
+                    style="width: 30px; height: auto; padding-right: 10px"
+                    alt=""
+                  />
+                  La Liga
+                </button></a
+              >
+            </li>
+            <br />
+            <li>
+              <a href="#">
+                <button class="btn btn-danger w-100 d-flex align-items-center">
+                  See More ..
+                </button></a
+              >
+            </li>
+          </ul>
+          <hr />
+          <h6 class="text-warning pb-3">Favorite teem :</h6>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button bg-black text-light"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  <img
+                    src="images/real.logo (1).jpg"
+                    style="width: 60px; height: auto; padding-right: 15px"
+                    alt=""
+                  />
+                  Real Mdrid
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>Real Madrid.</strong>The pride of Spain and a titan
+                  atop the list of all-time Champions League winners, Real
+                  Madrid is known for its dynamic goals and celebrity players.
+                  But as we explore, the recent success of the world’s best club
+                  owes much to a culture of innovation that extends far beyond
+                  the football arena.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed bg-black text-light"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  <img
+                    src="images/fcbarca.logo (1).jpg"
+                    style="width: 30px; height: auto; padding-right: 15px"
+                    alt=""
+                  />
+                  FC Barcelona
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>FC Barcelona</strong>
+                  The FC Barcelona team of the 2010/11 season is often regarded
+                  as one of the greatest soccer teams in history, and many fans
+                  and analysts make a strong case for this claim. Here are some
+                  key points that support this view: Achievements La Liga
+                  Champions: Barcelona won the La Liga title, finishing the
+                  season with 96 points. UEFA Champions League: They triumphed
+                  in the Champions League, defeating Manchester United 3-1 in
+                  the final at Wembley Stadium. Copa del Rey: Barcelona also won
+                  the Copa del Rey, completing a domestic double. Style of Play
+                  Tiki-Taka: The team was known for its "tiki-taka" style,
+                  characterized by short passing and movement, maintaining
+                  possession, and quick transitions. This approach
+                  revolutionized how soccer was played and is still influential
+                  today.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed bg-black text-light"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  <img
+                    src="images/citi.logo (1).jpg"
+                    style="width: 30px; height: auto; padding-right: 15px"
+                    alt=""
+                  />
+                  Man City
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>Man City.</strong>
+                  Pep Guardiola is widely regarded as one of the best coaches in
+                  the world. He has won numerous trophies and accolades as a
+                  player and a coach, most notably with Barcelona, Bayern
+                  Munich, and Manchester City. His coaching philosophy and
+                  methods are based on the principles of possession, pressing,
+                  positional play, and attacking football. He is influenced by
+                  the likes of Johan Cruyff, Marcelo Bielsa, and Juanma Lillo,
+                  but he also has a unique vision and style. Guardiola joined
+                  Manchester City in 2016, after a successful spell at Bayern
+                  Munich. He faced many challenges and criticisms in his first
+                  season in England, as he struggled to adapt to the competition
+                  and quality of the Premier League. Many doubted and questioned
+                  his style of play, which seemed too risky and complex for the
+                  English game. However, Guardiola did not give up on his
+                  beliefs and convictions. Instead, he gradually implemented his
+                  philosophy and methods at Manchester City, transforming them
+                  into one of the most dominant and attractive teams in football
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+      <div class="col-md-6">
+        <div
+          class="alert alert-warning alert-dismissible fade show"
+          role="alert"
+        >
+          <strong>the last news!</strong> this is the world of football.
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="alert"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="post">
+          <div class="d-flex align-items-center mb-3">
+            <img
+              src="images/chelse.logo (1).png"
+              style="height: 50px; width: 50px"
+              class="rounded-circle me-2"
+              alt="User"
+            />
+            <div>
+              <strong>UEFA Champions League</strong>
+              <p class="text-muted mb-0" style="font-size: 12px">
+                Last Week, 15:23 pm
+              </p>
+            </div>
+          </div>
+          <hr />
+          <div class="">
+            <p>
+              Today's results and tomorrow's matches, most notably Barcelona and
+              Borussia Dortmund.
+              #champions-leuge\#Real-madrid\#fc-barcelona\#ucl
+            </p>
+            <div class="row">
+              <div class="col-md-6">
+                <img src="images/rusultof.tuesday (1).jpg" alt="" />
+              </div>
+              <div class="col-md-6">
+                <img src="images/wensday,game (1).jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="d-flex align-items-center mb-3">
+            <img
+              src="images/chelse.logo (1).png"
+              style="height: 50px; width: 50px"
+              class="rounded-circle me-2"
+              alt="User"
+            />
+            <div>
+              <strong>UEFA Champions League</strong>
+              <p class="text-muted mb-0" style="font-size: 12px">
+                yesterday, 23:05 pm
+              </p>
+            </div>
+          </div>
+          <hr />
+          <p>the Moroccan star with kdb</p>
+
+          <div class="col-md">
+            <img src="images/bilale (1).webp" alt="" />
+          </div>
+        </div>
+        <div class="post">
+          <div class="d-flex align-items-center mb-3">
+            <img
+              src="images/liverpool.logo (1).jpg"
+              style="height: 50px; width: 50px"
+              class="rounded-circle me-2"
+              alt="User"
+            />
+            <div>
+              <strong>liverpool FC</strong>
+              <p class="text-muted mb-0" style="font-size: 12px">5h ago</p>
+            </div>
+          </div>
+          <hr />
+          <p>
+            Ending 2024 with a win in the capital , and what a performens from
+            mo-salah , Leading the way in @premierleague goals and assists 🔝👑
+          </p>
+          <div class="row">
+            <div class="col-md-6">
+              <img src="images/liverpool.news (1).jpg" alt="Post Image" />
+            </div>
+            <div class="col-md-6">
+              <img src="images/mo.p (1).jpg" alt="Post Image" />
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="d-flex align-items-center mb-3">
+            <img
+              src="images/LaLiga-Logo (1).jpg"
+              style="height: 50px; width: 50px"
+              class="rounded-circle me-2"
+              alt="User"
+            />
+            <div>
+              <strong>La Liga</strong>
+              <p class="text-muted mb-0" style="font-size: 12px">
+                last week , At 21:00
+              </p>
+            </div>
+          </div>
+          <hr />
+          <p>Real Madrid in 2024👑</p>
+          <div class="row">
+            <img src="images/real-award.jpg" style="height: 400px;" alt="Post Image" />
+          </div>
+        </div>
+        <div class="post">
+          <div class="d-flex align-items-center mb-3">
+            <img
+              src="images/LaLiga-Logo (1).jpg"
+              style="height: 50px; width: 50px"
+              class="rounded-circle me-2"
+              alt="User"
+            />
+            <div>
+              <strong>La Liga</strong>
+              <p class="text-muted mb-0" style="font-size: 12px">ago</p>
+            </div>
+          </div>
+          <hr />
+          <p>
+            Atletico Madrid at top of Spanish La Liga table after comeback win
+            against Barcelona🔝👑
+          </p>
+          <div class="row">
+            <img src="images/atlithico,player.jpg" alt="Post Image" />
+          </div>
+        </div>
+        <div class="post">
+          <div class="d-flex align-items-center mb-3">
+            <img
+              src="images/prrmierluegue.logo (1).jpg"
+              style="height: 50px; width: 50px"
+              class="rounded-circle me-2"
+              alt="User"
+            />
+            <div>
+              <strong>Premier League</strong>
+              <p class="text-muted mb-0" style="font-size: 12px">3min ago</p>
+            </div>
+          </div>
+          <hr />
+          <p>
+            13 goals scored, 0 conceded, 12 points 😮‍💨 What an end to the year
+            it's been for @NUFC 👏
+          </p>
+          <div class="row">
+            <div class="col-md-6">
+              <img src="images/newcasel.engyear.jpg" alt="Post Image" />
+            </div>
+            <div class="col-md-6">
+              <img src="images/isak.jpg" alt="Post Image" />
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <a href="https://www.skysports.com/football"
+            ><button class="btn btn-danger">SEE MORE ...</button></a
+          >
+        </div>
+      </div>
+
+
+
+
+
+
+
+      <div class="col-md-3 mb-3">
+        <h6 class="text-warning pt-3">Matchday :</h6>
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="images/prrmierluegue.logo (1).jpg"
+              style="width: 30px; height: auto"
+              alt=""
+            />
+            <strong>Premier Leugue</strong>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-black text-light">
+              <img
+                src="images/united.logo (1).jpg"
+                style="width: 30px; height: auto"
+                alt=""
+              />MAN <span class="text-black">__</span>
+              <span class="p-4 text-danger">37'</span
+              ><span class="text-black">__</span> CHE<img
+                src="images/chelse.logo (1).png"
+                style="width: 30px; height: auto"
+                alt=""
+              />
+
+              <a href="https://kooora.live-kooora.com/">
+                <button class="btn btn-danger w-100">Watch Now</button></a
+              >
+            </li>
+
+            <li class="list-group-item bg-black text-light">
+              <img
+                src="images/citi.logo (1).jpg"
+                style="width: 30px; height: auto"
+                alt=""
+              />MAN <span class="text-black">__</span>
+              <span class="p-4"> 20:00</span
+              ><span class="text-black">__</span> LIV
+              <img
+                src="images/liverpool.logo (1).jpg"
+                style="width: 30px; height: auto"
+                alt=""
+              />
+            </li>
+            <li class="list-group-item bg-black text-light">
+              <img
+                src="images/arsenal.logo (1).jpg"
+                style="width: 30px; height: auto"
+                alt=""
+              />ARS <span class="text-black">__</span>
+              <span class="p-4">21:15</span>
+              <span class="text-black">__</span> TOT<img
+                src="images/tot.logo (1).jpg"
+                style="width: 30px; height: auto"
+                alt=""
+              />
+            </li>
+          </ul>
+        </div>
+        <br />
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="images/LaLiga-Logo (1).jpg"
+              style="width: 30px; height: auto"
+              alt=""
+            />
+            <strong>La Liga</strong>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-black text-light">
+              <img
+                src="images/atletico.logo (1).jpg"
+                style="width: 30px; height: auto"
+                alt=""
+              />ATL <span class="text-black">__</span>
+              <span class="p-4 text-danger">17'</span>
+              <span class="text-black">___</span> FCB<img
+                src="images/fcbarca.logo (1).jpg"
+                style="width: 30px; height: auto"
+                alt=""
+              />
+              <button class="btn btn-danger w-100">Watch Now</button>
+            </li>
+            <li class="list-group-item bg-black text-light">
+              <img
+                src="images/sevilla.logo (1).png"
+                style="width: 50px; height: auto"
+                alt=""
+              />SEV <span class="text-black">_</span>
+              <span class="p-3"> 20:00</span>
+              RMA<img
+                src="images/real.logo (1).jpg"
+                style="width: 50px; height: auto"
+                alt=""
+              />
+            </li>
+          </ul>
+        </div>
+        <br />
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="images/bundesliga.logo (1).jpg"
+              style="width: 30px; height: auto"
+              alt=""
+            />
+            <strong>Bundesliga</strong>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-black text-light">
+              <img
+                src="images/dortmend.logo (1).png"
+                style="width: 30px; height: auto"
+                alt=""
+              />BVB <span class="text-black">__</span>
+              <span class="p-4">17:45</span>
+              <span class="text-black">__</span> FCB<img
+                src="images/bayern.logo (1).png"
+                style="width: 30px; height: auto"
+                alt=""
+              />
+            </li>
+          </ul>
+        </div>
+        <br />
+        <a href="https://www.365scores.com/fr"
+          ><button class="btn btn-warning w-100">
+            SEE ALL GAME OF TODAY
+          </button></a
+        >
+      </div>
+    </div>
+
+    <footer class="bg-transparent mb-5 mt-3 text-center col-md">
+
+  
+      <!--  <div class="col-md-4 text-black "> jjjjjjj</div>-->
+    
+        <div class="container mt-4 mb-5 col-md-4">
+    
+          <img src="images/copiright.png" style="width: 15px;">
+          <small class="text-light">copirght by ByteGard. All rights reserved. </small>
+        </div>
+       <!-- <div class="col-md-4 text-black "> jjjjjjj</div>-->
+    
+    
+    
+      </footer>
+
+
+
+   <!-- <footer class="bg-secondary text-center p-5">copiright</footer>-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

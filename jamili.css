@@ -1,0 +1,28 @@
+.jamili{
+    background-color: black;
+    color: aliceblue;
+}
+#simo{
+    transform: scale(1.05);
+    transition: 2s;
+}
+.jamili img:hover{
+    transform: scale(1.05);
+    transition: 2s;
+}
+.tamto{
+    background-color: black;
+    height: 740px;
+    width: auto;
+}
+.simo{
+    background-color: rgb(48, 47, 47);
+}
+#amina:hover{
+    transform: scale(1.05);
+    transition: 2s;
+}
+
+
+
+

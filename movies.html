@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>JOYBOY</title>
+ 
+ <style>
+        body{
+            background-color: black;
+        }
+       
+        .horizontal-scroll {
+            overflow-x: auto; 
+            white-space: nowrap; 
+        }
+
+        .horizontal-scroll .row {
+            display: flex; 
+            flex-wrap: nowrap; 
+        }
+
+        .horizontal-scroll .card {
+            min-width: 250px; 
+            margin-right: 15px;
+        }
+
+        .horizontal-scroll::-webkit-scrollbar {
+            height: 1px;
+        }
+        .col img{
+            height: 350px;
+        }
+       
+        .col:hover{
+            transform: scale(1.04);
+        }
+    /*3d*/
+    
+       .rotate3d img {
+  height: 200px;
+  width: 150px;
+}
+.rotate3d img:hover{
+    transform: scale(1.03);
+}
+
+.rotate3d {
+    margin-top: 90px   ;
+    margin-left: 40%;
+  width: 150px;
+  height: 250px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  animation: gallary 20s linear infinite;
+  cursor: pointer;
+}
+
+@keyframes gallary {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}
+
+.rotate3d span {
+  position: absolute;
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+}
+
+    nav{
+        position: static;
+    }
+
+    .hovlink{
+    color:gold;
+  
+  }
+  
+  .hovlink:hover{
+    background-color: brown;
+    color: rgb(0, 0, 0);
+    border-bottom: brown 1px solid;
+    border-top:brown 1px solid ;
+    box-shadow: 
+    0 0 30px rgb(143, 6, 18),0 0 100px brown;
+  }
+  
+  .btn-brown:hover{
+    box-shadow: 0 0 5px brown,
+    0 0 25px brown,0 0 50px brown,
+    0 0 100px brown,0 0 200px brown;
+  
+  }
+  
+  btn-gold:hover{
+    box-shadow: 0 0 5px gold,
+    0 0 25px gold,0 0 50px gold,
+    0 0 100px gold,0 0 200px gold;
+  
+  }
+  
+  .btn-white:hover{
+    box-shadow: 0 0 5px white,
+    0 0 25px white,0 0 50px white,
+    0 0 100px white,0 0 200px white;
+  
+  }
+
+  .nav-color{
+  
+  box-shadow: 
+  
+  0 0 100px brown;
+}
+
+.logo{
+ 
+ mix-blend-mode:exclusion;
+
+}
+
+.top{
+  margin-top: 300px;
+}
+
+  
+
+        
+    </style>
+</head>
+<body>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-black  col-md-12 btn-gold nav-color ">
+        <div class="container-fluid col-md-12">
+          <a class="navbar-brand text-light ms-2 col-md-2 hov  " href="mostafa.html" >
+            <img src="watch/joyboy1.jpeg" class=" logo rounded-4 " style="width: 40px;">
+            JOYBOY
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end me-3 justify-content-center " id="navbarNavAltMarkup">
+            <div class="navbar-nav col-md-4">
+              <a class="nav-link hovlink " href="adam.html">Music</a>
+              <a class="nav-link hovlink " aria-current="page" href="#watch">watch</a>
+              <a class="nav-link hovlink " href="Marouane.html">football</a>
+              <a class="nav-link hovlink " aria-disabled="true" href="jamili.html">Gaming</a>
+            </div>
+
+            <li class="nav-item dropdown text-light ">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Genre
+                </a>
+                <ul class="dropdown-menu bg-danger">
+                  <li><a class="dropdown-item text-danger bg-dark" href="#Fantasy">Fantasy</a></li>
+                  <li><a class="dropdown-item text-danger bg-dark" href="#Action">Action</a></li>
+                  <li><a class="dropdown-item text-danger bg-dark" href="#Drama">Drama</a></li>
+                  <li><a class="dropdown-item text-danger bg-dark" href="#Crime">Crime</a></li>
+                  <li><a class="dropdown-item text-danger bg-dark" href="#Series">Series</a></li>
+                  <li><a class="dropdown-item text-danger bg-dark" href="#Anime">Anime</a></li>
+                </ul>
+              </li>
+
+           
+
+
+            <div class="container-fluid ms-5 col-md-4 ">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2 text-light bg-black" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-danger btn-brown" type="submit">search</button>
+              </form>
+            </div>
+    
+            <button class="btn btn-outline-light me-5 col-md-2 btn-white" type="submit">Sing Up Now</button>
+          </div>
+        </div>
+
+
+    
+      </nav>
+
+   <!-- <nav class="navbar navbar-expand bg-danger sticky-top">
+        <div class="container-fluid">
+            
+          <a class="navbar-brand" href="#"><i class="bi bi-tv"></i></a>
+          
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              
+             
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Genre
+                </a>
+                <ul class="dropdown-menu bg-danger">
+                  <li><a class="dropdown-item text-danger bg-dark" href="#Fantasy">Fantasy</a></li>
+                  <li><a class="dropdown-item text-danger bg-dark" href="#Action">Action</a></li>
+                  <li><a class="dropdown-item text-danger bg-dark" href="#Drama">Drama</a></li>
+                  <li><a class="dropdown-item text-danger bg-dark" href="#Crime">Crime</a></li>
+                  <li><a class="dropdown-item text-danger bg-dark" href="#Series">Series</a></li>
+                  <li><a class="dropdown-item text-danger bg-dark" href="#Anime">Anime</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Top IMDb</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>-->
+    <!--rotat3d-->
+    <div class="rotate3d">
+        <span style="--i:1"><img class="rounded" src="watch/intersteler.jpg" alt=""></span>
+        <span style="--i:2"><img class="rounded" src="watch/seven.jpg" alt=""></span>
+        <span style="--i:3"><img class="rounded" src="watch/shutter island.jpg" alt=""></span>
+        <span style="--i:4"><img class="rounded" src="watch/the guilty.jpg" alt=""></span>
+        <span style="--i:5"><img class="rounded" src="watch/lost.jpg" alt=""></span>
+        <span style="--i:6"><img class="rounded" src="watch/aot.jpg" alt=""></span>
+        <span style="--i:7"><img class="rounded" src="watch/sherlock.jpg" alt=""></span>
+        <span style="--i:8"><img class="rounded" src="watch/aot.jpg" alt=""></span>
+
+      </div>
+    <!-- fantasy -->
+    <div class="container my-5" id="Fantasy">
+        <div class="text-center mb-4 "><button type="button" class="btn btn-outline-danger" ><h2>Fantasy</h2></button></div>
+        <div class="horizontal-scroll">
+            <div class="row g-4 p-4">
+                
+                <!-- Card 1 -->
+                <div class="col">
+                    
+                    <div class="card h-100 shadow">
+                        <img src="watch/intersteler.jpg" class="card-img-top" alt="Interstellar">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Interstellar</h5>
+                            <p class="card-text">Genre: Science-fiction</p>
+                            <p class="card-text">Year: 2014</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/inception.jpg" class="card-img-top" alt="inception">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Inception</h5>
+                            <p class="card-text">Genre: Science-fiction</p>
+                            <p class="card-text">Year: 2010</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/lucy.jpg" class="card-img-top" alt="lucy">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Lucy</h5>
+                            <p class="card-text">Genre: Science-fiction</p>
+                            <p class="card-text">Year: 2014</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/split.jpg" class="card-img-top" alt="split">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Split</h5>
+                            <p class="card-text">Genre: Science-fiction</p>
+                            <p class="card-text">Year: 2016</p>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Card 5 -->
+                 <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/avengers.jpg" class="card-img-top" alt="avengers">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Avengers: Endgame</h5>
+                            <p class="card-text">Genre: Science-fiction</p>
+                            <p class="card-text">Year: 2019</p>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Card 6 -->
+                 <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/avengers2.jpg" class="card-img-top" alt="avengers2">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Avengers: Infinity War</h5>
+                            <p class="card-text">Genre: Science-fiction</p>
+                            <p class="card-text">Year: 2018</p>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Card 7 -->
+                 <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/mirage.jpg" class="card-img-top" alt="Mirage">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Mirage</h5>
+                            <p class="card-text">Genre: Science-fiction</p>
+                            <p class="card-text">Year: 2018</p>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Card 8 -->
+                 <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/damsel.jpg" class="card-img-top" alt="Damsel">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Damsel</h5>
+                            <p class="card-text">Genre: Science-fiction</p>
+                            <p class="card-text">Year: 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- action -->
+    <div class="container my-5" id="Action">
+        <div class="text-center mb-4 "><button type="button" class="btn btn-outline-danger" ><h2>Action</h2></button></div>
+        <div class="horizontal-scroll">
+            <div class="row g-4 p-4">
+                <!-- Card 1 -->
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/the beekeeper.jpg" class="card-img-top" alt="Interstellar">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">The Beekeeper</h5>
+                            <p class="card-text">Genre: Action</p>
+                            <p class="card-text">Year: 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/mission imposible.jpg" class="card-img-top" alt="mission imposible">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Mission Imposible</h5>
+                            <p class="card-text">Genre: Action</p>
+                            <p class="card-text">Year: 2010</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/fall.jpg" class="card-img-top" alt="Fall">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Fall</h5>
+                            <p class="card-text">Genre: Action</p>
+                            <p class="card-text">Year: 2022</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/extraction.jpg" class="card-img-top" alt="Extraction">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Extraction</h5>
+                            <p class="card-text">Genre: Action</p>
+                            <p class="card-text">Year: 2020</p>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Card 5 -->
+                 <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/extraction2.jpg" class="card-img-top" alt="Extraction II">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Extraction II</h5>
+                            <p class="card-text">Genre: Action</p>
+                            <p class="card-text">Year: 2023</p>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Card 6 -->
+                 <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/dune1.jpg" class="card-img-top" alt="Dune: Part One">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Dune: Part One</h5>
+                            <p class="card-text">Genre: Action</p>
+                            <p class="card-text">Year: 2021</p>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Card 7 -->
+                 <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/dune2.jpg" class="card-img-top" alt="Dune: Part Two">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Dune: Part Two</h5>
+                            <p class="card-text">Genre: Action</p>
+                            <p class="card-text">Year: 2024</p>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Card 8 -->
+                 <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/seven.jpg" class="card-img-top" alt="seven">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Seven</h5>
+                            <p class="card-text">Genre: Action</p>
+                            <p class="card-text">Year: 1995</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- drama -->
+    <div class="container my-5" id="Drama">
+        <div class="text-center mb-4 "><button type="button" class="btn btn-outline-danger" ><h2>Drama</h2></button></div>
+        <div class="horizontal-scroll">
+            <div class="row g-4 p-4">
+                <!-- Card 1 -->
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/127 Hours.jpg" class="card-img-top" alt="127 Hours">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">127 Hours</h5>
+                            <p class="card-text">Genre: Drama</p>
+                            <p class="card-text">Year: 2010</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/shutter island.jpg" class="card-img-top" alt="shutter island">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Shutter Island</h5>
+                            <p class="card-text">Genre: Drama</p>
+                            <p class="card-text">Year: 2010</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/whiplash.jpg" class="card-img-top" alt="whiplash">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Whiplash</h5>
+                            <p class="card-text">Genre: Drama</p>
+                            <p class="card-text">Year: 2014</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/brothers.jpg" class="card-img-top" alt="brothers">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">brothers</h5>
+                            <p class="card-text">Genre: Drama</p>
+                            <p class="card-text">Year: 2009</p>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Card 5 -->
+                 <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/gone girle.jpg" class="card-img-top" alt="Gone Girl">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Gone Girl</h5>
+                            <p class="card-text">Genre: Drama</p>
+                            <p class="card-text">Year: 2014</p>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Card 6 -->
+                 <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/the revenant.jpg" class="card-img-top" alt="The Revenant">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">The Revenant</h5>
+                            <p class="card-text">Genre: Drama</p>
+                            <p class="card-text">Year: 2015</p>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Card 7 -->
+                 <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/mu name is.jpg" class="card-img-top" alt="My Name Is Khan">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">My Name Is Khan</h5>
+                            <p class="card-text">Genre: Drama</p>
+                            <p class="card-text">Year: 2010</p>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Card 8 -->
+                 <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/catch.jpg" class="card-img-top" alt="Catch Me If You Can">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Catch Me If You Can</h5>
+                            <p class="card-text">Genre: Drama</p>
+                            <p class="card-text">Year: 2002</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Crim -->
+    <div class="container my-5" id="Crime">
+        <div class="text-center mb-4 "><button type="button" class="btn btn-outline-danger" ><h2>Drama</h2></button></div>
+        <div class="horizontal-scroll">
+            <div class="row g-4 p-4">
+                <!-- Card 1 -->
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/prisoners.jpg" class="card-img-top" alt="Prisoners">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Prisoners</h5>
+                            <p class="card-text">Genre: Crime</p>
+                            <p class="card-text">Year: 2013</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/the guilty.jpg" class="card-img-top" alt="The Guilty">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">The Guilty</h5>
+                            <p class="card-text">Genre: Crime</p>
+                            <p class="card-text">Year: 2021</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/parasite.jpg" class="card-img-top" alt="Parasite">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Parasite</h5>
+                            <p class="card-text">Genre: Crime</p>
+                            <p class="card-text">Year: 2019</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/zodiac.jpg" class="card-img-top" alt="Zodiac">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Zodiac</h5>
+                            <p class="card-text">Genre: Crime</p>
+                            <p class="card-text">Year: 2007</p>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Card 5 -->
+                 <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/the green mile.jpg" class="card-img-top" alt="The Green Mile">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">The Green Mile</h5>
+                            <p class="card-text">Genre: Crime</p>
+                            <p class="card-text">Year: 1999</p>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Card 6 -->
+                 <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/gangster.jpg" class="card-img-top" alt="The Gangster, the Cop, the Devil">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">The Gangster, the Cop, the Devil</h5>
+                            <p class="card-text">Genre: Crime</p>
+                            <p class="card-text">Year: 2019</p>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Card 7 -->
+                 <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/the goodfather.jpg" class="card-img-top" alt="The Godfather Part II">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">The Godfather Part II</h5>
+                            <p class="card-text">Genre: Crime</p>
+                            <p class="card-text">Year: 1974</p>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Card 8 -->
+                 <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/Triple Frontier.jpg" class="card-img-top" alt="Triple Frontier">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Triple Frontier</h5>
+                            <p class="card-text">Genre: Crime</p>
+                            <p class="card-text">Year: 2019</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Series -->
+    <div class="container my-5" id="Series">
+        <div class="text-center mb-4 "><button type="button" class="btn btn-outline-danger" ><h2>Series</h2></button></div>
+        <div class="horizontal-scroll">
+            <div class="row g-4 p-4">
+                <!-- Card 1 -->
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/lost.jpg" class="card-img-top" alt="lost">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Lost</h5>
+                            <p class="card-text">Genre: Adventure Epic</p>
+                            <p class="card-text">Year: 2004</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/sherlock.jpg" class="card-img-top" alt="Sherlock">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Sherlock</h5>
+                            <p class="card-text">Genre: Police Procedural</p>
+                            <p class="card-text">Year: 2010</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/twd.jpg" class="card-img-top" alt="The Walking Dead">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">The Walking Dead</h5>
+                            <p class="card-text">Genre: Zombie Horror</p>
+                            <p class="card-text">Year: 2010</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/the boys.jpg" class="card-img-top" alt="The Boys">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">The Boys</h5>
+                            <p class="card-text">Genre: Dark Comedy</p>
+                            <p class="card-text">Year: 2019</p>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Card 5 -->
+                 <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/the pounisher.jpg" class="card-img-top" alt="The Punisher">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">The Punisher</h5>
+                            <p class="card-text">Genre: Superhero/Action</p>
+                            <p class="card-text">Year: 2017</p>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Card 6 -->
+                 <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/the bear.jpg" class="card-img-top" alt="The Bear">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">The Bear</h5>
+                            <p class="card-text">Genre: Psychological Drama</p>
+                            <p class="card-text">Year: 2022</p>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Card 7 -->
+                 <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/mouse.jpg" class="card-img-top" alt="Mouse">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Mouse</h5>
+                            <p class="card-text">Genre: Psychological Thriller</p>
+                            <p class="card-text">Year: 2019</p>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Card 8 -->
+                 <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/reacher.jpg" class="card-img-top" alt="Reacher">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Reacher</h5>
+                            <p class="card-text">Genre: Action/Thriller</p>
+                            <p class="card-text">Year: 2022</p>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Card 9 -->
+                 <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/dexter.jpg" class="card-img-top" alt="dexter">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Dexter</h5>
+                            <p class="card-text">Genre: Psychological Drama</p>
+                            <p class="card-text">Year: 2006</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- anime -->
+    <div class="container my-5" id="Anime">
+
+        <div class="text-center mb-4 "><button type="button" class="btn btn-outline-danger" ><h2>Anime</h2></button></div>
+       
+        <div class="horizontal-scroll">
+            <div class="row g-4 p-4">
+                <!-- Card 1 -->
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/aot.jpg" class="card-img-top" alt="Attack on Titan">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Attack on Titan</h5>
+                            <p class="card-text">Genre: Action Epic/Anime</p>
+                            <p class="card-text">Year: 2013</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/one piece.jpg" class="card-img-top" alt="One Piece">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">One Piece</h5>
+                            <p class="card-text">Genre: Adventure Epic/Anime</p>
+                            <p class="card-text">Year: 1999</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/death note.jpg" class="card-img-top" alt="Death Note">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Death Note</h5>
+                            <p class="card-text">Genre: Adult Animation/Anime</p>
+                            <p class="card-text">Year: 2006</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/vinland saga.jpg" class="card-img-top" alt="Vinland Saga">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Vinland Saga</h5>
+                            <p class="card-text">Genre: Adult Animation/Anime</p>
+                            <p class="card-text">Year: 2019</p>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Card 5 -->
+                 <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/hunter x hunter.jpg" class="card-img-top" alt="Hunter x Hunter">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Hunter x Hunter</h5>
+                            <p class="card-text">Genre: Adult Animation/Anime</p>
+                            <p class="card-text">Year: 2011</p>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Card 6 -->
+                 <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/naruto.jpg" class="card-img-top" alt="Naruto: Shippuden">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Naruto: Shippuden</h5>
+                            <p class="card-text">Genre: Anime</p>
+                            <p class="card-text">Year: 2007</p>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Card 7 -->
+                 <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/parasyt the maxim.jpg" class="card-img-top" alt="Parasyte: The Maxim">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Parasyte: The Maxim</h5>
+                            <p class="card-text">Genre: Alien Invasion/Anime</p>
+                            <p class="card-text">Year: 2014</p>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Card 8 -->
+                 <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="watch/arcane.jpg" class="card-img-top" alt="Arcane">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Arcane</h5>
+                            <p class="card-text">Genre: DAction Epic</p>
+                            <p class="card-text">Year: 2021</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="bg-black mb-5 mt-3 text-center col-md">
+
+  
+      <!--  <div class="col-md-4 text-black "> jjjjjjj</div>-->
+    
+        <div class="container mt-4 mb-5 col-md-4">
+    
+          <img src="images/copiright.png" style="width: 15px;">
+          <small class="text-light">copirght by ByteGard. All rights reserved. </small>
+        </div>
+       <!-- <div class="col-md-4 text-black "> jjjjjjj</div>-->
+    
+    
+    
+      </footer>
+
+   <!-- <footer class="text-center text-light py-3 bg-danger">
+        <p class="text-dark text-center">Free movies online, here you can watch movies online in high quality for free without annoying of advertising, just come and enjoy your movies online. fmovie, fmovies, bmovies</p>
+                <p>&copy; 2024 Dev. All Rights Reserved |youssef</p>
+
+    </footer>-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
